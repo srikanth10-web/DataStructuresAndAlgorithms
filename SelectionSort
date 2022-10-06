@@ -1,0 +1,11 @@
+#selection sort
+x=[12,44,9,13,4,23,2]
+for i in range(len(x)):
+  min_i=i
+  for j in range(i+1,len(x)):
+      if x[min_i]>x[j]:
+            min_i=j
+  x[i],x[min_i]=x[min_i],x[i]
+print('After Selection sort')
+for i in range(len(x)):
+  print(x[i])
