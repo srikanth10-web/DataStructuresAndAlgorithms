@@ -1,0 +1,23 @@
+class Stack:
+    def __init__(self):
+        self.stack = list()
+    def push(self,item):
+        self.stack.append(item)
+    def pop(self):
+        if len(self.stack)>0:
+            return self.stack.pop()
+        else:
+            return 'there are no elements'
+    def peek(self):
+        if len(self.stack)>0:
+            return self.stack[len(self.stack)-1]
+        else:
+            return None
+obj = Stack()
+obj.push(4)
+obj.push(6)
+obj.push(10)
+print(obj.pop())
+print(obj.pop())
+print(obj.pop())
+print(obj.pop())
